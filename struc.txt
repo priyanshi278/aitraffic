@@ -18,8 +18,11 @@ ai_traffic_system/
 │   │   └── analysis.py
 │   │
 │   ├── services/              # Business logic
-│   │   └── ai_service.py
-│   │   └── route_analysis_service.py
+│       └── ai_service.py
+│       └── route_analysis_service.py
 │   
-├── requirements.txt
+├── backend/
+│   ├── requirements.txt  
+├── frontend/
+│   ├── requirements.txt  
 ├── streamlit_app.py

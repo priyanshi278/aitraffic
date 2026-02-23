@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
-from app.database import get_db
-from app.models import Traffic
-from app.schemas.traffic import TrafficCreate
+from backend.app.database import get_db
+from backend.app.models import Traffic
+from backend.app.schemas.traffic import TrafficCreate
 
 router = APIRouter(prefix="/traffic", tags=["Traffic"])
 

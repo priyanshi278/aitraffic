@@ -1,14 +1,10 @@
 from fastapi import FastAPI
-from app.routers import routes, traffic, incidents, analysis
-from app.database import engine
-from app.models import Base
+from backend.app.routers import routes, traffic, incidents, analysis
+from backend.app.database import engine
+from backend.app.models import Base
 
 app = FastAPI(title="AI Traffic & Transport Intelligence System")
 
-# Create tables only once on startup
-@app.on_event("startup")
-def startup_event():
-    Base.metadata.create_all(bind=engine)
 
 app.include_router(routes.router, prefix="/routes", tags=["Routes"])
 app.include_router(traffic.router, prefix="/traffic", tags=["Traffic"])
