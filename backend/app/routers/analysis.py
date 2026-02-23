@@ -1,10 +1,10 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
-from backend.app.database import get_db
-from backend.app.models import Route, Traffic, Incident
-from backend.app.services.route_analysis_service import analyze_routes
-from backend.app.services.ai_service import rule_based_summary, groq_summary
+from app.database import get_db
+from app.models import Route, Traffic, Incident
+from app.services.route_analysis_service import analyze_routes
+from app.services.ai_service import rule_based_summary, groq_summary
 
 router = APIRouter(prefix="/analysis", tags=["AI Analysis"])
 
