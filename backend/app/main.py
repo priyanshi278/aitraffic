@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from backend.app.routers import routes, traffic, incidents, analysis
-from backend.app.database import engine
-from backend.app.models import Base
+from app.routers import routes, traffic, incidents, analysis
+from app.database import engine
+from app.models import Base
 
 app = FastAPI(title="AI Traffic & Transport Intelligence System")
 
