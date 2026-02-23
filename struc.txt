@@ -1,0 +1,25 @@
+ai_traffic_system/
+│
+├── app/
+│   ├── main.py                # FastAPI app entry point
+│   ├── database.py  
+│   ├── models.py           
+│   │
+│   ├── schemas/                # Pydantic models (schemas)
+│   │   ├── route.py
+│   │   ├── traffic.py
+│   │   ├── incident.py
+│   │   └── analysis.py
+│   │
+│   ├── routers/               # API routes
+│   │   ├── routes.py
+│   │   ├── traffic.py
+│   │   ├── incidents.py
+│   │   └── analysis.py
+│   │
+│   ├── services/              # Business logic
+│   │   └── ai_service.py
+│   │   └── route_analysis_service.py
+│   
+├── requirements.txt
+├── streamlit_app.py
